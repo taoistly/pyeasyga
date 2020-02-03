@@ -11,6 +11,12 @@ from operator import attrgetter
 from six.moves import range
 
 
+"""
+Inherent GeneticAlgorithm and overwrite:
+`create_individual`: seed -> individual
+`crossover`: A,B -> C,D
+`mutate`: A -> *inplace*
+"""
 class GeneticAlgorithm(object):
     """Genetic Algorithm class.
 
