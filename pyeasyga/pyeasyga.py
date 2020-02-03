@@ -13,9 +13,10 @@ from six.moves import range
 
 """
 Inherent GeneticAlgorithm and overwrite:
-`create_individual`: seed -> individual
+`create_individual`: seed_data -> individual
 `crossover`: A,B -> C,D
 `mutate`: A -> *inplace*
+`fitness_function`: A, seed_data -> score
 """
 class GeneticAlgorithm(object):
     """Genetic Algorithm class.
